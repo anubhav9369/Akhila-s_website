@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="story">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P. V. Akhila — Storyteller · Quantum Mind</title>
+<meta name="description" content="P. V. Akhila — storyteller, author of Pragma, and quantum machine learning researcher. Two worlds. One Akhila.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<canvas id="cosmos" aria-hidden="true"></canvas>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#home">P. V. <em>Akhila</em></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#story">Story</a>
+      <a href="#book" data-profile="story">Book</a>
+      <a href="#stages" data-profile="story">Stages</a>
+      <a href="#lab" data-profile="tech">Lab</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggleNav" aria-label="Switch profile">
+        <span class="toggle-caption"><strong>Meet the other Akhila</strong><span class="theme-state">The Storyteller</span> · tap to flip</span>
+        <span class="knob"></span>
+      </button>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section id="home">
+    <div class="wrap hero-inner">
+      <span class="eyebrow copy-story">Storyteller · Author</span>
+      <span class="eyebrow copy-tech">Quantum ML · Data Science</span>
+      <h1 class="hero-title">
+        <span class="copy-story">I turn <em>unsaid feelings</em> into words.</span>
+        <span class="copy-tech">I teach <em>machines</em> to learn.</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="copy-story">For hearts that feel too much. P. V. Akhila writes and performs stories — and her book <i>Pragma</i> has already found 100+ homes.</span>
+        <span class="copy-tech">P. V. Akhila — M.Sc. Data Science, quantum machine learning researcher. AutoML at C-DAC, noise-resilient quantum models, and a soft spot for hard problems.</span>
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid copy-story" href="#book">Read Pragma</a>
+        <a class="btn btn-solid copy-tech" href="#lab">Enter the lab</a>
+        <a class="btn btn-ghost copy-story" href="#stages">See her on stage</a>
+        <a class="btn btn-ghost copy-tech" href="#contact">Work with her</a>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </div>
+  </section>
+
+  <!-- PROFILE SWITCH -->
+  <section class="switch-band">
+    <div class="wrap reveal">
+      <h2>Two worlds. <em>One Akhila.</em></h2>
+      <p>
+        <span class="copy-story">By day she spins feeling into story. But flip the switch — and you'll meet the engineer who speaks fluent quantum.</span>
+        <span class="copy-tech">By night she trains neural networks and tames quantum noise. But flip the switch — and you'll meet the storyteller who holds a room breathless.</span>
+      </p>
+      <button class="big-switch" id="themeToggleBand">
+        <span>Meet the other Akhila</span><span class="knob"></span>
+      </button>
+      <div class="now-viewing">Now viewing · <strong class="theme-state">The Storyteller</strong></div>
+    </div>
+  </section>
+
+  <!-- STORY / TIMELINE -->
+  <section id="story" class="block">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-eyebrow copy-story">The journey</div>
+        <div class="sec-eyebrow copy-tech">The trajectory</div>
+        <h2 class="sec-title">
+          <span class="copy-story">Every story has a <em>first page.</em></span>
+          <span class="copy-tech">Every model has <em>training data.</em></span>
+        </h2>
+        <p class="sec-sub">
+          <span class="copy-story">Told year by year — how the words found their voice, and the rooms found their storyteller.</span>
+          <span class="copy-tech">Year by year — how curiosity became craft, from physics classrooms to quantum circuits.</span>
+        </p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" class="block" data-profile="story">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-eyebrow">The book</div>
+        <h2 class="sec-title">Pragma — <em>a soulful journey of love.</em></h2>
+      </div>
+      <div class="book-grid">
+        <div class="book3d reveal">
+          <div class="book-cover">
+            <span class="kicker">A verse novelette</span>
+            <h3>PRAGMA</h3>
+            <div>
+              <div class="sub">A Soulful Journey of Love</div>
+              <div class="author" style="margin-top:14px">P. V. Akhila</div>
+            </div>
+          </div>
+        </div>
+        <div class="book-copy reveal">
+          <div class="quote">Kaathirundhen… we didn't fall in love, we grew in love.</div>
+          <p>Pragma is a fiction verse novelette — love told the way it actually happens: slowly, honestly, in fragments that find you. Written for the ones who feel everything and say little.</p>
+          <p>Published with Notion Press, it has travelled far beyond a bookshelf — into open mics, storytelling sets, and the hands of readers who write back.</p>
+          <div class="book-stats">
+            <div class="stat"><b>100+</b><span>copies found their homes</span></div>
+            <div class="stat"><b>1</b><span>debut verse novelette</span></div>
+            <div class="stat"><b>∞</b><span>feelings, unsaid → said</span></div>
+          </div>
+          <div class="hero-ctas" style="justify-content:flex-start">
+            <a class="btn btn-solid" href="https://notionpress.com/in/read/pragma" target="_blank" rel="noopener">Get the book</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/writer___akhila/" target="_blank" rel="noopener">Follow the words</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGES -->
+  <section id="stages" class="block" data-profile="story">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-eyebrow">On stage</div>
+        <h2 class="sec-title">Rooms that <em>leaned in.</em></h2>
+        <p class="sec-sub">Storytelling sets, open mics and shared stages across Chennai — narrative, emotion, a room that leans in.</p>
+      </div>
+      <div class="show-grid">
+        <article class="show-card">
+          <img src="assets/show-essp.jpg" alt="Enna Solla Pogiraai show poster">
+          <div class="body">
+            <div class="date">July 18, 2026</div>
+            <h3>Enna Solla Pogiraai??</h3>
+            <p>A storytelling set built around the pull between what we want to say and what we actually say. A manifested moment — her stories before a packed audience.</p>
+            <div class="venue"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Punch, Alwarpet, Chennai</div>
+          </div>
+        </article>
+        <article class="show-card">
+          <img src="assets/duo.jpg" alt="P V Akhila and Naresh S on stage">
+          <div class="body">
+            <div class="date">August 30, 2026</div>
+            <h3>Nesippaya</h3>
+            <p>When a storyteller meets a stand-up comedian. One evening that makes you laugh first — and leaves you with a story you'll never forget.</p>
+            <div class="venue"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>DBICA Blackbox, Chennai · with Naresh S</div>
+          </div>
+        </article>
+        <article class="show-card">
+          <img src="assets/akhila-stage.jpg" alt="P V Akhila performing a storytelling set">
+          <div class="body">
+            <div class="date">2026 · on tour of the heart</div>
+            <h3>Tape A Tale · Open Mics</h3>
+            <p>Tape A Tale (Ghar) Chennai — "My heart still waits for you", "Vo aakhri chitthi". Plus Hari Kadhaa Live, Crack Open 3.0, Aval Women's Day open mic and soul-healing storytelling nights.</p>
+            <div class="venue"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chennai's storytelling circuit</div>
+          </div>
+        </article>
+      </div>
+      <div class="formats reveal">
+        <div class="format"><h4>Storytelling Set</h4><p>Her individual set — narrative, emotion, a room that leans in.</p></div>
+        <div class="format"><h4>Story × Comedy</h4><p>The signature duo format with Naresh S — laughter that hands the mic to feeling.</p></div>
+        <div class="format"><h4>Hosting & Engagement</h4><p>For events that need a performer who can hold and work a room.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAB -->
+  <section id="lab" class="block" data-profile="tech">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-eyebrow">The lab</div>
+        <h2 class="sec-title">
+          <span class="copy-story">The <em>other</em> half of the brain.</span>
+          <span class="copy-tech">Research, <em>shipped.</em></span>
+        </h2>
+        <p class="sec-sub">
+          <span class="copy-story">Yes — she also builds intelligent machines. M.Sc. Data Science, quantum ML researcher, and an engineer who likes her systems settled and her results reproducible.</span>
+          <span class="copy-tech">M.Sc. Data Science (VIT Chennai). I work across ML, deep learning and quantum machine learning — end-to-end pipelines, honest benchmarks, reproducible research.</span>
+        </p>
+      </div>
+      <div class="proj-grid reveal">
+        <a class="proj" href="https://github.com/Akhila707/Explainable-Noise--Resilient-Quantum-Machine-Learning-in-Life-Science-Domain-using-Breast-Cancer" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <h4>Noise-Resilient Quantum ML</h4>
+            <svg class="gh" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </div>
+          <div class="stack">PennyLane · VQC · DenseNet121</div>
+          <p>Benchmarked AUC degradation across 4 quantum noise types at 3 severity levels for breast-cancer mammogram classification.</p>
+          <span class="go">View on GitHub &#8594;</span>
+        </a>
+        <a class="proj" href="https://github.com/Akhila707/Video-Anomaly-Detection-System" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <h4>Video Anomaly Detection</h4>
+            <svg class="gh" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </div>
+          <div class="stack">Isolation Forest · Random Forest · Gradio</div>
+          <p>Hybrid unsupervised-to-supervised pipeline on ShanghaiTech — 97.79% accuracy, 88.63% AUC-ROC, deployed live.</p>
+          <span class="go">View on GitHub &#8594;</span>
+        </a>
+        <a class="proj" href="https://github.com/Akhila707/Intellistock" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <h4>IntelliStock</h4>
+            <svg class="gh" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </div>
+          <div class="stack">YOLOv8 · LSTM · PyTorch</div>
+          <p>Image-driven batch inference over 1,000+ shelf images with temporal forecasting for predictive restocking.</p>
+          <span class="go">View on GitHub &#8594;</span>
+        </a>
+        <a class="proj" href="https://github.com/Akhila707" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <h4>DocRAG</h4>
+            <svg class="gh" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </div>
+          <div class="stack">LLaMA-3 · FAISS · Sentence Transformers</div>
+          <p>Local PDF question-answering with retrieval-augmented generation and vector-index caching for faster inference.</p>
+          <span class="go">View on GitHub &#8594;</span>
+        </a>
+      </div>
+      <div class="lab-lower">
+        <div class="reveal">
+          <div class="skill-group">
+            <h5>Core stack</h5>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span>
+              <span class="chip">Scikit-learn</span><span class="chip">Qiskit</span><span class="chip">PennyLane</span>
+              <span class="chip">RAG · LLMs</span><span class="chip">YOLO · OpenCV</span><span class="chip">SQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="cert">
+            <div class="badge">Q</div>
+            <div><b>Qiskit Global Summer School 2026</b><span>Quantum Excellence (Advanced)</span></div>
+          </div>
+          <div class="cert">
+            <div class="badge">◈</div>
+            <div><b>Basics of Quantum Information — IBM</b><span>2025</span></div>
+          </div>
+          <div class="cert">
+            <div class="badge">✦</div>
+            <div><b>Conference Presentation — ICNCS, VIT Chennai</b><span>2025</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="block">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-eyebrow">Say hello</div>
+        <h2 class="sec-title">
+          <span class="copy-story">Book her for <em>your stage.</em></span>
+          <span class="copy-tech">Let's <em>build</em> something.</span>
+        </h2>
+        <p class="sec-sub">
+          <span class="copy-story">College fests, cultural nights, curated shows, private evenings — for rooms ready to feel something.</span>
+          <span class="copy-tech">ML roles, quantum ML collaboration, research conversations — Chennai, open to relocation.</span>
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal" data-profile="story">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <h3>Book a storytelling set</h3>
+          <p>College fests, cultural nights, curated shows, private evenings — for rooms ready to feel something.</p>
+          <a class="row" href="mailto:pvakhila06@gmail.com"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>pvakhila06@gmail.com</a>
+          <a class="row" href="https://www.instagram.com/writer___akhila/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>@writer___akhila</a>
+        </div>
+        <div class="contact-card reveal" data-profile="tech">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M19 5l-2.8 2.8M7.8 16.2 5 19"/></svg></div>
+          <h3>Research & engineering</h3>
+          <p>ML roles, quantum ML collaboration, research conversations — Chennai, open to relocation.</p>
+          <a class="row" href="mailto:akhilapv7077@gmail.com"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>akhilapv7077@gmail.com</a>
+          <a class="row" href="https://www.linkedin.com/in/akhila-p-v-2b728b353/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" style="fill:var(--accent);stroke:none"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>LinkedIn</a>
+          <a class="row" href="https://github.com/Akhila707" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" style="fill:var(--accent);stroke:none"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="sig">Made of stories and superpositions.</div>
+  <div>© 2026 P. V. Akhila · Chennai, India</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
