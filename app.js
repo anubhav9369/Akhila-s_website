@@ -51,7 +51,7 @@ const TIMELINES = {
       img: 'assets/duo.jpg', tag: 'Story × Comedy' },
     { year: '2026', title: 'The stage keeps calling',
       text: 'Tape A Tale (Ghar) Chennai — “My heart still waits for you”, “Vo aakhri chitthi”. Plus Hari Kadhaa Live, Crack Open 3.0, Aval Women\u2019s Day open mic: rooms that lean in.',
-      img: 'assets/akhila-stage.jpg', tag: 'On tour' },
+      img: 'assets/Ghar.jpg', tag: 'On tour' },
   ],
   tech: [
     { year: '2019 – 2023', title: 'Physics first',
