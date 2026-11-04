@@ -50,7 +50,7 @@ const TIMELINES = {
       text: 'Storyteller meets stand-up. An evening with Naresh S at DBICA Blackbox where laughter hands the mic to feeling — and the room never forgets.',
       img: 'assets/duo.jpg', tag: 'Story × Comedy' },
     { year: '2026', title: 'The stage keeps calling',
-      text: 'Tape A Tale (Ghar) Chennai — “My heart still waits for you”, “Vo aakhri chitthi”. Plus Hari Kadhaa Live, Crack Open 3.0, Aval Women\u2019s Day open mic: rooms that lean in.',
+      text: 'Tape A Tale (Ghar) Chennai — “My heart still waits for you”, “Vo aakhri chitthi”. Crack Open 3.0, Aval Women\u2019s Day and other open mic: rooms that lean in.',
       img: 'assets/Ghar.jpg', tag: 'On tour' },
   ],
   tech: [
