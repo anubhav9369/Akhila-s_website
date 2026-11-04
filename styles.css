@@ -203,7 +203,7 @@ span.copy-tech{display:none}
   text-transform:uppercase;color:var(--accent);margin-bottom:8px}
 .chapter h3{font-family:var(--font-display);font-size:1.65rem;font-weight:600;margin-bottom:10px;line-height:1.25}
 .chapter p{color:var(--ink-soft);font-size:.96rem}
-.chapter img{width:100%;border-radius:12px;margin-top:18px;aspect-ratio:4/3;object-fit:cover;display:block}
+.chapter img{width:100%;border-radius:12px;margin-top:18px;aspect-ratio:4/3;object-fit:contain;display:block;background:var(--bg-soft);padding:8px}
 .chapter .tag{display:inline-block;margin-top:14px;font-size:.72rem;font-weight:600;letter-spacing:.14em;
   text-transform:uppercase;color:var(--gold);border:1px solid var(--line);border-radius:999px;padding:5px 14px}
 
@@ -241,7 +241,8 @@ span.copy-tech{display:none}
   overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,background .6s;opacity:0;transform:translateY(30px)}
 .show-card.in{opacity:1;transform:none}
 .show-card:hover{transform:translateY(-6px)}
-.show-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.show-card img{width:100%;aspect-ratio:16/10;object-fit:contain;display:block;background:var(--bg-soft);padding:8px}
+.format-tag{display:inline-block;font-size:.66rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:6px 14px;margin:2px 0 12px}
 .show-card .body{padding:26px}
 .show-card .date{font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
 .show-card h3{font-family:var(--font-display);font-size:1.5rem;font-weight:600;margin-bottom:8px}
@@ -255,6 +256,8 @@ span.copy-tech{display:none}
 
 /* ---------- lab ---------- */
 #lab{background:linear-gradient(180deg,transparent,var(--bg-soft) 18%,var(--bg-soft) 82%,transparent)}
+.lab-portrait{width:148px;height:148px;margin:0 auto 22px;border-radius:50%;overflow:hidden;border:3px solid var(--accent);box-shadow:var(--shadow)}
+.lab-portrait img{width:100%;height:100%;object-fit:cover;display:block}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
 .proj{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;
   transition:transform .3s,background .6s,border-color .3s;text-decoration:none;color:var(--ink);display:block}
